@@ -1,0 +1,67 @@
+configuration {
+  font: "JetBrainsMono Nerd Font 12";
+  location: 0;
+  show-icons: false;
+  display-drun: " ";
+}
+
+* {
+  background-color: transparent;
+  text-color: #cdd6f4;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#window {
+  background-color: rgba(10, 10, 10, 0.95);
+  padding: 10px;
+}
+
+#mainbox {
+  background-color: transparent;
+  border: 0;
+}
+
+#listview {
+  background-color: transparent;
+  border: 0;
+}
+
+#inputbar {
+  background-color: transparent;
+  border: 0;
+}
+
+#listview {
+  spacing: 2px;
+  fixed-height: false;
+}
+
+#element {
+  background-color: transparent;
+  text-color: #cdd6f4;
+  padding: 2px 6px;
+}
+
+#element selected {
+  background-color: rgba(80, 80, 80, 0.4); /* abu tipis */
+  text-color: #f38ba8;
+}
+
+#entry {
+  background-color: transparent;
+  text-color: #cdd6f4;
+  padding: 2px 6px;
+}
+
+#prompt {
+  background-color: transparent;
+  text-color: #cdd6f4;
+  padding: 2px 6px;
+}
+
+#scrollbar {
+  handle-color: #585b70;
+  background-color: transparent;
+}

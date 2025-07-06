@@ -1,0 +1,46 @@
+
+@theme "/home/archlinux/.config/rofi/themes/niskala.rasi"
+configuration {
+	show-icons: true;
+	}
+
+* {
+	font: "Sans 12";
+	icon-size: 5ch;
+	}
+
+window {
+	padding: 10px;
+	width: 30%;
+	location: center;
+	}
+
+mainbox {
+	children: [ inputbar, listview ];
+	spacing: 10px;
+	}
+
+inputbar {
+	padding: 10px;
+	border: 1px solid;
+	}
+
+listview {
+	fixed-height: true;
+	spacing: 10px;
+	scrollbar: true;
+	lines: 5;
+	}
+
+element {
+	padding: 6px 10px;
+	spacing: 12px;
+	}
+
+element-icon {
+	size: 5ch;
+	}
+
+element-text {
+	vertical-align: 0.5;
+	}

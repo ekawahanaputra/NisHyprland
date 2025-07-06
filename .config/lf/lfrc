@@ -1,0 +1,16 @@
+set previewer ~/.config/lf/preview.sh 
+set preview true
+set hidden false 
+set drawbox true
+
+
+map <enter> open
+map r rename
+map d delete
+map c copy
+map x cut
+map v paste
+map q quit
+map m %mkdir New_Folder; reload
+map . set hidden!
+map s invert
