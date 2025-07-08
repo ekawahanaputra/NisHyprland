@@ -14,3 +14,4 @@ map q quit
 map m %mkdir New_Folder; reload
 map . set hidden!
 map s invert
+map <space> toggle
