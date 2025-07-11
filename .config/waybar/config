@@ -2,7 +2,14 @@
   "layer": "top",
   "position": "top",
   "modules-left": ["hyprland/workspaces", "clock"],
+  "modules-center": ["custom/market"],
   "modules-right": ["temperature", "memory", "battery", "network", "tray"],
+
+"custom/market": {
+    "exec":"/home/archlinux/.dotfiles/.config/waybar/market.py",
+    "interval":60,
+    "return-type":"text"
+    },
 
 "clock": {
     "format": "{:%H:%M:%S - %A, %d %B %Y}",
