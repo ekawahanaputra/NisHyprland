@@ -27,6 +27,7 @@ alias confhland='sudo nvim ~/.dotfiles/.config/hypr/hyprland.conf'
 alias cleansystem='sudo pacman -Rns $(pacman -Qtdq)'
 alias run='python main.py'
 alias virbox='env -u WAYLAND_DISPLAY VirtualBox'
+alias setmarket='nvim ~/.dotfiles/.config/waybar/market.py'
 
 clear(){
 command clear

@@ -1,20 +1,24 @@
 #!/home/archlinux/.dotfiles/.config/waybar/waybarenv/bin/python
+from stockModule import*
 
-import yfinance as yf
-
-def priceStock(emiten):
-    data = yf.Ticker(emiten)
-    nowPrice = data.history(period="1d")["Close"].iloc[-1]
-    prevPrice = data.history(period="2d")["Close"].iloc[-2] 
-    if nowPrice > prevPrice:
-        price = f"{emiten} = {nowPrice:.0f} UP"
-    elif nowPrice < prevPrice:
-        price = f"{emiten} = {nowPrice:.0f} DN"
-    else:
-        price = f"{emiten} = {nowPrice:.0f}"
-    return price
+#Choice Your Stock !
+stockChoice1 = "PTBA"
 
 
 
-print(f"{priceStock("^JKSE")}  {priceStock("PTBA.JK")}")
+
+
+
+
+
+
+
+
+
+
+IHSG = priceStock("^JKSE")
+stock1 = priceStock(f"{stockChoice1}.JK")
+
+print(f"IHSG = {IHSG}  {stockChoice1} = {stock1}")
+#print(f"{priceStock("^JKSE")}  {priceStock("PTBA.JK")}")
 
