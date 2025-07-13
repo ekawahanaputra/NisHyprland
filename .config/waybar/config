@@ -8,7 +8,7 @@
 "custom/market": {
     "exec":"/home/archlinux/.dotfiles/.config/waybar/market.py",
     "interval":60,
-    "return-type":"text"
+    "return-type":"json"
     },
 
 "clock": {

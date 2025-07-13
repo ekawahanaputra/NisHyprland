@@ -26,3 +26,13 @@ window#waybar {
 #network {
   color: #89b4fa;
 }
+
+#custom-market.up {
+  color: #00ff00;
+}
+#custom-market.down {
+  color: #ff5555;
+}
+#custom-market.same {
+  color: #ffffff;
+}

@@ -8,8 +8,11 @@ def priceStock(emiten):
     prevPrice = data.history(period="2d")["Close"].iloc[-2] 
     if nowPrice > prevPrice:
         price = f"{nowPrice:.0f} ▲"
+        cls = "up"
     elif nowPrice < prevPrice:
         price = f"{nowPrice:.0f} ▼"
+        cls = "down"
     else:
         price = f"{nowPrice:.0f}"
-    return price
+        cls = "same"
+    return price, cls
