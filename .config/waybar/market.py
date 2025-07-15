@@ -22,15 +22,13 @@ price2, color2 = priceStock(f"{stockChoice1}.JK")
 
 text = f"IHSG = {price1} | {stockChoice1} = {price2}"
 
-if "down" in (color1, color2):
-    color = "down"
-elif "up" in (color1, color2):
+if "up" in (color1, color2):
     color = "up"
+elif "down" in (color1, color2):
+    color = "down"
 else:
     color = "same"
 
 print(json.dumps({
-    "text": text,
-    "class": color
-    }))
-
+    "text":text,
+    "class": color}))

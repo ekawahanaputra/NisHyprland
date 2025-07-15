@@ -28,6 +28,8 @@ alias cleansystem='sudo pacman -Rns $(pacman -Qtdq)'
 alias run='python main.py'
 alias virbox='env -u WAYLAND_DISPLAY VirtualBox'
 alias setmarket='nvim ~/.dotfiles/.config/waybar/market.py'
+#alias enablevm='sudo systemctl start vmware-networks.service && sudo systemctl start vmware-usbarbitrator.service'
+#alias disablevm='sudo systemctl stop vmware-networks.service && sudo systemctl stop vmware-usbarbitrator.service'
 
 clear(){
 command clear
